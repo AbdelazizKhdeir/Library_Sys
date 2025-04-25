@@ -18,9 +18,9 @@ router.get('/:id', (req, res) => {
 });
 // POST
 router.post('/', (req, res) => {
-  const { name, nationality, birth_year } = req.body;
-  db.query(`INSERT INTO Author (name, nationality, birth_year) VALUES (?, ?, ?)`,
-    [name, nationality, birth_year],
+  const { Author_name, nationality, birth_year } = req.body;
+  db.query(`INSERT INTO Author (Author_name, nationality, birth_year) VALUES (?, ?, ?)`,
+    [Author_name, nationality, birth_year],
     (err, results) => {
       if (err) throw err;
       res.json({ message: 'Author added', id: results.insertId });
@@ -28,9 +28,9 @@ router.post('/', (req, res) => {
 });
 // PUT
 router.put('/:id', (req, res) => {
-  const { name, nationality, birth_year } = req.body;
-  db.query(`UPDATE Author SET name = ?, nationality = ?, birth_year = ? WHERE author_id = ?`,
-    [name, nationality, birth_year, req.params.id],
+  const { Author_name, nationality, birth_year } = req.body;
+  db.query(`UPDATE Author SET Author_name = ?, nationality = ?, birth_year = ? WHERE author_id = ?`,
+    [Author_name, nationality, birth_year, req.params.id],
     (err) => {
       if (err) throw err;
       res.json({ message: 'Author updated' });
