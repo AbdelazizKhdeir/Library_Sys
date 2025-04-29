@@ -2,6 +2,24 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "mysql2": "^3.14.0"
-  }
+    "mysql2": "^3.14.1"
+  },
+  "name": "library-system",
+  "version": "1.0.0",
+  "description": "\"# LibrarySystem\" \r \"# LaibrarySystem\" \r \"# LaibrarySystem\" \r \"# LaibrarySystem\" \r \"# LaibrarySystem\" \r \"# Library-System\" \r \"# Library-System\" \r \"# Library-System\" \r \"# Library_Sys\" \r \"# Library_Sys\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdelazizKhdeir/Library_Sys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdelazizKhdeir/Library_Sys/issues"
+  },
+  "homepage": "https://github.com/AbdelazizKhdeir/Library_Sys#readme"
 }
